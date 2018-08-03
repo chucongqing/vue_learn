@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./js/vue.js"></script>
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+    <title>DEMO</title>
+
+    
+</head>
+
+<body>
+    <div id="components-demo">
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+        <button-counter></button-counter>
+    </div>
+
+    <div id="c1">
+        <c-1 t2="title2"></c-1>
+    </div>
+<div id="blog-post-demo"><blog-post
+  v-for="post in posts"
+  :key="post.id"
+  :title="post.title"
+></blog-post>
+</div>
+<alert-box>
+  Something bad happened.
+</alert-box>
+
+    <script src="./js/c.js"></script>
+</body>
+
+</html>

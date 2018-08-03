@@ -1,0 +1,30 @@
+{
+  "name": "spa_1",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dpack": "webpack --mode development",
+    "ppack": "webpack --mode production",
+    "dev": "webpack-dev-server --open --hot", 
+    "build": "webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:freshmeat/VueProj1.git"
+  },
+  "keywords": [
+    "learn"
+  ],
+  "author": "ccq",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
