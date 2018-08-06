@@ -1,7 +1,7 @@
 var config = require("./config.json")
 
-module.exports = function(){
+export default function(){
     var greet = document.createElement('div');
-    greet.textContent = "Hi Hello and Welcom!"
+    greet.textContent = config.greetText + " waht?";
     return greet;
 }

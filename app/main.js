@@ -1,5 +1,15 @@
-const greeter = require('./Greeter.js');
+import Vue from './vue';
+
+import greeter from './Greeter'
 document.querySelector('#root').appendChild(greeter());
 
-var say = require('./util')
+import say from './util'
 say();
+
+
+var app = new Vue({
+    el:"#app",
+    data:{
+        message:'Hello Vue!'
+    }
+})
