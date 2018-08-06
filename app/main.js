@@ -1,6 +1,10 @@
 import Vue from './vue';
- import VueRouter from './vue-router';
+import VueRouter from './vue-router';
+import Vuex from './vuex';
+import app3 from './hello.vue';
 Vue.use(VueRouter);
+Vue.use(Vuex);
+
 
 // import greeter from './Greeter';
 // document.querySelector('#root').appendChild(greeter());
@@ -30,3 +34,13 @@ const router = new VueRouter({
 var app = new Vue({
     router
 }).$mount('#app');
+
+
+var app12 = new Vue({
+    el:'#app2',
+    render: h=> h(app3)
+    // template:'<App/>',
+    // component: {
+    //     app3
+    // }
+})
